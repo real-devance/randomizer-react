@@ -1,0 +1,53 @@
+/* Import Google Fonts 'Outfit' font family with weights from 100 to 900 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Apply the 'Outfit' font family to the body and set the position to relative */
+body {
+    font-family: "Outfit", sans-serif;
+    position: relative;
+}
+
+
+.logo {
+    width: 8rem;
+}
+
+.icon-menu,
+.icon-close {
+    width: 2rem; 
+    background: transparent; 
+    border: var(--border-0); 
+    cursor: pointer; 
+}
+
+/* Allows words to break at any character if they exceed the container's width */
+.wrap-word {
+    word-break: break-all; 
+    overflow-wrap: break-word; 
+}
+
+/* Utility classes to manage scrollbars */
+
+/* Enables horizontal scrolling if content overflows horizontally and hides the scrollbar */
+.no-scroll-bar-X {
+    overflow-x: auto; /* Enables horizontal scrolling if content overflows horizontally */
+    -ms-overflow-style: none; /* Hides the scrollbar for IE/Edge */
+    scrollbar-width: none; /* Hides the scrollbar for Firefox */
+}
+
+/* Hides the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.no-scroll-bar-X::-webkit-scrollbar {
+    display: none;
+}
+
+/* Enables vertical scrolling if content overflows vertically and hides the scrollbar */
+.no-scroll-bar-Y {
+    overflow-y: auto; /* Enables vertical scrolling if content overflows vertically */
+    -ms-overflow-style: none; /* Hides the scrollbar for IE/Edge */
+    scrollbar-width: none; /* Hides the scrollbar for Firefox */
+}
+
+/* Hides the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.no-scroll-bar-Y::-webkit-scrollbar {
+    display: none;
+}

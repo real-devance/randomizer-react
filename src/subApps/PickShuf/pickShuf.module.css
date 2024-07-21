@@ -1,0 +1,134 @@
+/* Styling for the title heading */
+.title_heading {
+    font-size: clamp(var(--text-xl), calc(1.75rem + 5vw), var(--text-5xl)); /* Responsive font size */
+    color: var(--dim-gray);
+    letter-spacing: .1ch;
+    place-self: center; /* Center title */
+    position: relative;
+    left: 0.75rem; 
+
+}
+
+/* Styling for Pick Shuf Container */
+.pick_shuf_container {
+    width: 100%;
+    max-width: 30rem;
+    place-self: start center;
+    display: grid;
+    gap: 4rem; /* Space between items */
+    z-index: 1;
+}
+
+
+/* Styling for Input Section */
+.input_section {
+    display: grid;
+    gap: 3rem;
+}
+
+.input_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: var(--border-5) solid var(--dark-charcoal);
+    background-color: var(--light-gray);
+    box-shadow: 0px 10px 12px 2px var(--dim-gray);
+}
+
+.user_input {
+    background-color: var(--bg-color-light);
+    border: var(--border-4) solid var(--dark-charcoal);
+    padding: 0.15em 0.5em;
+    color: black;
+    border-radius: 4px;
+}
+
+
+.list_box {
+    padding: 1rem;
+    border: var(--border-5) solid var(--dark-charcoal);
+    background-color: var(--light-gray);
+    box-shadow: 0px 10px 12px 2px var(--dim-gray);
+}
+
+.input_list_items {
+    max-height: 15rem;
+}
+
+.input_list_items > li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+
+/* Styling for Output Section */
+.result_box{
+    position: relative;
+    padding: 2rem 1rem;
+    background-color: var(--light-gray);
+    border: var(--border-5) solid var(--dark-charcoal);
+    box-shadow: 0px 10px 12px 2px var(--dim-gray);
+}
+
+.picked_result {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.shuffled_result {
+    text-align: center;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.shuffled_list_items{
+    max-height: 20rem;
+}
+
+.shuffled_list_items > li{
+    padding: 0.1em;
+    border-bottom: 2px solid black;
+}
+
+
+/* Button Section */
+.btn_section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    gap: 2rem;
+}
+
+.btn_section > *{
+    flex: 1;
+}
+
+/* Utility Classes */
+
+.list_style {
+    display: flex;
+    align-items: flex-end;
+    gap: .25em;
+}
+
+.icon_back {
+    width: 1.5rem;
+}
+
+.back_btn{
+    border: 0;
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+    background-color: transparent;
+}
+
+.action_btn {
+    border: 0;
+    background-color: transparent;
+}
+

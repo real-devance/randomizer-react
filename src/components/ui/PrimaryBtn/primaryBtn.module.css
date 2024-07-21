@@ -1,0 +1,14 @@
+/* Styles for primary button */
+.primary_btn {
+    background-color: var(--light-gray);
+    border: var(--border-5) solid var(--dark-charcoal); 
+    border-radius: 0.5rem; 
+    letter-spacing: 0.1ch; 
+    transition: transform 0.1s; /* Smooth transform transition effect */
+}
+
+/* Hover state for primary button */
+.primary_btn:hover {
+    background: linear-gradient(90deg, var(--bg-color-dark) 0%, var(--bg-color-light) 100%); /* Gradient background on hover */
+    transform: scale(0.99); 
+}

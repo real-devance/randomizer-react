@@ -1,0 +1,14 @@
+/* Importing CSS reset styles to ensure consistency across different browsers */
+@import './css/reset.css';
+
+/* Importing global CSS variables for colors, font sizes, and other reusable properties */
+@import './css/variables.css';
+/* Global CSS variables */
+
+/* Importing font styles to apply custom fonts throughout the application */
+@import './css/font.css';
+/* Font styles */
+
+/* Importing common styles that are used throughout the application */
+@import './css/common.css';
+/* Common styles */

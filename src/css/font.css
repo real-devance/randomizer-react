@@ -1,0 +1,26 @@
+/* Utility classes for font sizes */
+.text-xs { font-size: var(--text-xs); } /* Extra Small */
+.text-sm { font-size: var(--text-sm); } /* Small */
+.text-base { font-size: var(--text-base); } /* Base */
+.text-md { font-size: var(--text-md);} /* Medium */
+.text-lg { font-size: var(--text-lg); } /* Large */
+.text-xl { font-size: var(--text-xl); } /* Extra Large */
+.text-2xl { font-size: var(--text-2xl); } /* 2X Large */
+.text-3xl { font-size: var(--text-3xl); } /* 3X Large */
+.text-4xl { font-size: var(--text-4xl); } /* 4X Large */
+.text-5xl { font-size: var(--text-5xl); } /* 5X Large */
+
+/* Utility classes for font weights */
+.font-thin { font-weight: var(--font-thin); } /* Thin */
+.font-extralight { font-weight: var(--font-extralight); } /* Extra Light */
+.font-light { font-weight: var(--font-light); } /* Light */
+.font-normal { font-weight: var(--font-normal); } /* Normal */
+.font-medium { font-weight: var(--font-medium); } /* Medium */
+.font-semibold { font-weight: var(--font-semibold); } /* Semi-Bold */
+.font-bold { font-weight: var(--font-bold); } /* Bold */
+.font-extrabold { font-weight: var(--font-extrabold); } /* Extra Bold */
+
+/* Utility classes for text colors */
+.fc-dim-gray { color: var(--dim-gray); } /* Dim gray text color */
+.fc-light-fog { color: var(--light-fog); } /* Light fog text color */
+.fc-dark-charcoal { color: var(--dark-charcoal); } /* Dark charcoal text color */

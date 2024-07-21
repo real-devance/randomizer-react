@@ -1,0 +1,25 @@
+/* Define custom colors for the coin app section */
+.main_container {
+    --bg-color-light: white;  /* Light background color */
+    --bg-color-dark: black;   /* Dark background color */
+}
+
+/* Styling for the coin app section */
+.main_container {
+    min-height: 100%;
+    min-height: 100dvh; /* Full viewport height */
+    display: grid;
+    position: relative; /* Allows absolute positioning for child elements */
+    padding: 2rem 1rem;
+    background: linear-gradient(90deg, var(--bg-color-light) 50%, var(--bg-color-dark) 50%); /* Split background gradient */
+}
+
+/* Pseudo-element for vertical divider */
+.main_container::before {
+    content: "";
+    position: absolute;
+    min-height: 100%;
+    width: var(--border-6); /* Width of the vertical divider */
+    background-color: var(--dark-charcoal); /* Color of the divider */
+    left: 50%; /* Center divider */
+}

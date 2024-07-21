@@ -1,0 +1,34 @@
+/* Styling for the title heading */
+.title_heading {
+    font-size: clamp(var(--text-lg), calc(1.5rem + 2.5vw), var(--text-5xl)); 
+    color: var(--dim-gray); 
+    letter-spacing: .1ch;
+    place-self: center; 
+    position: relative;
+    left: 0.25rem; 
+    z-index: 1; 
+}
+
+/* Styling for the coin toss container */
+.coin_toss_container {
+    width: 100%;
+    max-width: 20rem;
+    place-self: start center;
+    display: grid;
+    gap: 4rem; 
+    z-index: 1;
+}
+
+/* Styling for the coin circle */
+.coin_circle {
+    width: 70%;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    display: grid;
+    place-items: center; 
+    border: var(--border-6) solid var(--dark-charcoal); 
+    border-radius: 50%;
+    background-color: var(--light-gray); 
+    box-shadow: 0px 8px 12px 2px var(--dim-gray); 
+    overflow-x: auto;
+}

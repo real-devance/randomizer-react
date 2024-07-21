@@ -1,0 +1,40 @@
+/* Container for the checkbox and label */
+.check_box {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+/* Base styling for the checkbox marker */
+.check_marker[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--light-fog);
+    border: var(--border-2) solid var(--dark-charcoal);
+    position: relative;
+    cursor: pointer;
+}
+
+/* Styling for the checked state of the checkbox marker */
+.check_marker[type="checkbox"]:checked {
+    background-color: var(--dark-charcoal);
+    border-color: var(--dark-charcoal);
+}
+
+/* Checkmark styling for the checked state of the checkbox marker */
+.check_marker[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.25rem;
+    height: 0.65rem;
+    border: 2px solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transform-origin: center center;
+}

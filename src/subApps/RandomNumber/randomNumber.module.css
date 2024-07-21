@@ -1,0 +1,61 @@
+/* Styling for the title heading */
+.title_heading {
+    font-size: clamp(var(--text-lg), calc(1rem + 3vw), var(--text-4xl)); /* Responsive font size */
+    color: var(--dim-gray);
+    letter-spacing: .1ch;
+    place-self: center; /* Center title */
+    position: relative;
+    z-index: 1; 
+}
+
+
+/* Styling for the Random Number Container */
+.random_number_container {
+    width: 100%;
+    max-width: 30rem;
+    place-self: start center;
+    display: grid;
+    gap: 4rem;
+    z-index: 1;
+}
+
+
+.output_box{
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--light-gray);
+    border: var(--border-6) solid var(--dark-charcoal);
+    box-shadow: 0px 10px 12px 2px var(--dim-gray);
+}
+
+
+.input_box{
+    padding: 2rem;
+    border: var(--border-6) solid var(--dark-charcoal);
+    background-color: var(--light-gray);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: space-between;
+    box-shadow: 0px 10px 12px 2px var(--dim-gray);
+}
+
+.input_box > * {
+    flex: 1
+}
+
+
+.input_digit{
+    border: 0;
+    border-bottom: var(--border-2) solid var(--dim-gray);
+    background-color: transparent;
+}
+
+/* Styling for the generate button */
+
+.generate_btn{
+    padding: 0rem 2rem;
+    justify-self: center;
+}
+
+

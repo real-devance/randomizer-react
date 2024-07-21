@@ -1,0 +1,5 @@
+/* Styles for menu button */
+.menu_btn {
+    background-color: var(--light-gray); 
+    border: var(--border-4) solid var(--dark-charcoal);
+}

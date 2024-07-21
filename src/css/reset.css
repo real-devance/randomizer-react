@@ -1,0 +1,59 @@
+/* Apply box-sizing border-box to all elements, including pseudo-elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin from all elements */
+* {
+    margin: 0;
+}
+
+/* Images and SVGs are displayed as block elements and scale down to fit their containers */
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Remove default margin and padding from unordered and ordered lists, and remove list styling */
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Ensure input elements occupy full width, inherit font styles */
+input {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    outline: transparent;
+}
+
+
+/* Remove spinner controls from number inputs in WebKit browsers */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner controls from number inputs in Firefox */
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+/* Ensure buttons occupy full width, inherit font styles, remove outline, disable tap highlight */
+button {
+    display: block;
+    font-family: inherit;
+    outline: transparent;
+    -webkit-tap-highlight-color: transparent;
+    line-height: normal;
+    cursor: pointer;
+}
