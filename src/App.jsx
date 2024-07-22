@@ -14,6 +14,7 @@ import PickShuf from './subApps/PickShuf'
 import RandomNumber from './subApps/RandomNumber'
 import RandomPassword from './subApps/RandomPassword'
 
+import randomNumber from './utils/randomNumber' //Import random number utility function
 import { useState } from 'react'
 
 function App() {
@@ -24,12 +25,15 @@ function App() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false)
   
   // State for tracking the currently selected sub-app
-  const [currentApp, setCurrentApp] = useState(subApps[0])
+  const [currentApp, setCurrentApp] = useState(() => {
+    const randomIndex = randomNumber(0, subApps.length - 1)
+    return subApps[randomIndex]
+  })
 
   // Background colors for each sub-app
   const appBGColors = {
-    coinToss: { lightColor: '#D6BD98', darkColor: '#8D493A' },
-    diceRoll: { lightColor: '#FFEBB7', darkColor: '#8C6A5D' },
+    coinToss: { lightColor: '#F8F4E1', darkColor: '#116D6E' },
+    diceRoll: { lightColor: '#ECF2FF', darkColor: '#435585' },
     pickShuf: { lightColor: '#F1EAFF', darkColor: '#6554AF' },
     randomNumber: { lightColor: '#E8EFCF', darkColor: '#99BC85' },
     randomPassword: { lightColor: '#BFCFE7', darkColor: '#1D5B79' },
