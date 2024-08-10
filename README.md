@@ -12,3 +12,4 @@ Welcome to the Randomizer App! This versatile tool helps you add a touch of rand
 - **Random Number Picker**: Pick a random number within a specified range.
 - **List Shuffler**: Shuffle and randomize the order of list items.
 
+...
